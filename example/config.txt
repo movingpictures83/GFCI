@@ -1,0 +1,2 @@
+Prefix plugins/GFCI/example/
+Plugin GFCI inputfile audiology.txt outputfile output.png
