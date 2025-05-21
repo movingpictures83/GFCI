@@ -99,7 +99,9 @@ class GFCIPlugin:
 
   import pydot
   #from IPython.display import SVG
+  outf = open(outputfile+".txt", 'w')
   dot_str = pc.tetradGraphToDot(tetrad.getTetradGraph())
+  outf.write(dot_str)
   graphs = pydot.graph_from_dot_data(dot_str)
   graphs[0].write_png(outputfile)
   #svg_str = graphs[0].create_svg()
